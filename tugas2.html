@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+</head>
+<body bgcolor="white">
+    <center> 
+        <div>
+        <form method="POST">
+            <fieldset id="form">
+                <legend align="center"><h3>Formulir Pendaftaran</h3></legend>
+                <table class="form" border="0">
+                <tr>
+                    <td><label for="user">Username</label> </td>
+                    <td ><input class="input-data" type="text" name="user"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>
+                        <input class="input-data" type="password" name="password">
+                    </td>
+                </tr> 
+                <tr>
+                    <td><label for="password">konfirmasi password</label></td>
+                    <td>
+                        <input class="input-data" type="password" name="Password">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+            <fieldset id="form">
+                <legend align="center"><h3>Data</h3></legend>
+                <table class="form" border="0">
+                <tr>
+                    <td>Jenis kelamin</td>
+                    <td >
+                        <input type="radio" id="laki laki" name="Jenis kelamin"><label for="laki laki">laki laki</label>
+                        <input type="radio" id="perempuan" name="Jenis kelamin"><label for="perempuan">perempuan</label>
+                    </td>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Informasi yang disukai</td>
+                        <td>
+                            <input type="checkbox" name="olahraga" id="">
+                            <label for="olahraga">olahraga</label> <br>
+                            <input type="checkbox" name="travelling" id="">
+                            <label for="travelling">travelling</label> <br>
+                            <input type="checkbox" name="kesehatan" id="">
+                            <label for="kesehatan">kesehatan</label> <br>
+                            <input type="checkbox" name="makanan" id="">
+                            <label for="makanan">makanan</label> <br>
+                        </td>
+                    </tr>
+                    <td>Pilih Jurusan</td>
+                    <td > <select>
+                        <option value="">Teknologi Informasi</option>
+                        <option value="">Ilmu Komputer</option>
+                    </select>  
+                    </td>
+                    <tr>
+                        <td>champ favorit anda</td>
+                        <td>
+                            <textarea name="review" id="" cols="30" rows="4"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Login" id="submit-btn">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+            </fieldset>
+        </div>
+        </form>
+    </center>
+</body>
+</html>
