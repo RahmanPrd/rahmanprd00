@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+        .warnalatar {
+        background-color: skyblue;
+        } 
+        .btn-primary, .btn-outline-success {
+        margin-top: 2px;
+        }
+    </style>
+</head>
+<body class="warnalatar">
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""><p class="mt-3 ml-1"><b>Blog Rahman</b>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tutorial</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://www.w3schools.com/html/">HTML</a>
+                      <a class="dropdown-item" href="https://www.w3schools.com/css/">CSS</a>
+                      <a class="dropdown-item" href="https://www.w3schools.com/js/">JavaScript</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://www.w3schools.com/php/">PHP</a>
+                      <a class="dropdown-item" href="https://www.w3schools.com/bootstrap4/">Bootstrap</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li>
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Hubungi</a>
+                  </li>
+                  <li>
+                      <button type="button" class="btn btn-outline-success btn-block">Daftar</button>
+                  </li>
+                  <li>
+                      <button type="button" class="btn btn-primary btn-block">Masuk</button>
+                  </li>
+               </ul>
+              </div>
+            </nav>
+
+       <div class="container mb-5">
+           <div class="row">
+               <div class="col align-self-center">
+                   <h1 style="font-family: 'Gemunu Libre', sans-serif; font-size: 70px;">Selamat Datang di Web Saya</h1>
+                   <p class="mt-3 mb-4">Belajar pemrograman web baik itu HTML, CSS, JavaScript, PHP, dan sebagainya.</p>
+                   <a class="btn btn-success" href="#" role="button">Mulai Sekarang</a>         
+               </div>
+               <div class="col mt-5 d-none d-lg-block d-xl-block">
+                   <img src="https://png2.cleanpng.com/sh/12011066a24df1bae512b4907aed0b37/L0KzQYm4UsA3N6dxf5H0aYP2gLBuTgZma6V0ip9wcnHzeLrqk710fJDog595aHB3f7j5ggBpgV5ohNt5LXH1hH73jCJ1aZNxRadsMEm6SIjsUPVjOmU9RqoENke8QoiBUcU1PGI3TKc9MkC5QIO1kP5o/kisspng-vector-graphics-stock-photography-clip-art-portabl-5c09787e0eb248.8967927815441245420602.png" alt="Gambar" height="450" width="500">
+               </div>
+           </div>
+       </div>
+
+       <div class="container">
+           <div class="row mb-3">
+               <h2 style="font-family: 'Gemunu Libre', sans-serif;">Konten Saya :</h2>
+           </div>
+           <div class="row">
+               <div class="card-deck">
+                   <div class="card">
+                     <img src="data:image/png;base64,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" class="card-img-top" alt="..." height="250">
+                     <div class="card-body">
+                       <h5 class="card-title">Mengenal Apa Itu HTML</h5>
+                       <p class="card-text">Apa itu HTML? Hypertext Markup Language atau HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman website. Penasaran?</p>
+                       <p class="card-text"><small class="text-muted">Sumber dari niagahoster.co.id</small></p>
+                       <a class="btn btn-primary" href="https://www.niagahoster.co.id/blog/html-adalah/" role="button">Selengkapnya...</a>
+                     </div>
+                   </div>
+                   <div class="card">
+                     <img src="https://akcdn.detik.net.id/community/media/visual/2021/09/09/ardy-penyandang-difabel-jago-coding-dari-batang-4_43.jpeg?w=250&q=" class="card-img-top" alt="..." height="250">
+                     <div class="card-body">
+                       <h5 class="card-title">Kisah Penyandang Difabel Jago Coding</h5>
+                       <p class="card-text">Keterbatasan fisik bukan halangan untuk berkarya apalagi di dunia digital. Karyanya dibeli klien luar negeri loh.</p>
+                       <p class="card-text"><small class="text-muted">Sumber dari detik.com</small></p>
+                       <a class="btn btn-primary" href="https://inet.detik.com/cyberlife/d-5716928/kisah-penyandang-difabel-jago-coding-kliennya-dari-luar-negeri" role="button">Selengkapnya...</a>
+                     </div>
+                   </div>
+                   <div class="card">
+                     <img src="https://i0.wp.com/edusoftcenter.com/wp-content/uploads/2019/02/6c978be2ac1f668bd668c4a46a9dbb2c-1.jpg?fit=1920%2C1080&ssl=1" class="card-img-top" alt="..." height="250">
+                     <div class="card-body">
+                       <h5 class="card-title">Belajar Dasar PHP Hanya dalam 5 Menit</h5>
+                       <p class="card-text">Buat kamu yang bukan anak IT pasti bingung soal PHP. Tapi kamu masih bisa belajar PHP loh. Yuk, belajar sama-ama</p>
+                       <p class="card-text"><small class="text-muted">Sumber dari domainesia.com</small></p>
+                       <a class="btn btn-primary" href="https://www.domainesia.com/berita/belajar-php-untuk-pemula/" role="button">Selengkapnya...</a>
+                     </div>
+                   </div>
+                 </div>
+           </div>
+        
+           <br><br>
+            <div class="quotes">
+                <blockquote class="blockquote mb-0 text-center">
+                    <p>Programming isn't about what you know; it's about what you can figure out.</p>
+                    <footer class="blockquote-footer">Chris Pine</footer>
+                  </blockquote>
+            </div><br><br>
+
+   </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
